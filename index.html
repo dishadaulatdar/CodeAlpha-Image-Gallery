@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery | CodeAlpha Task 1</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Gallery | CodeAlpha Task 1</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="hero">
-    <h1>Image Gallery</h1>
-    <p>CodeAlpha Frontend Development — Task 1</p>
-  </header>
 
-  <main class="container">
-    <div class="controls">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="nature">Nature</button>
-      <button class="filter-btn" data-filter="city">City</button>
-      <button class="filter-btn" data-filter="travel">Travel</button>
-    </div>
+    <header class="hero">
+        <h1>Image Gallery</h1>
+        <p>CodeAlpha Frontend Development – Task 1</p>
+    </header>
 
-    <section class="gallery" id="gallery">
-      <figure class="card" data-category="nature">
-        <img src="images/nature1.svg" alt="Mountain landscape" data-title="Mountain Escape">
-        <figcaption>Mountain Escape</figcaption>
-      </figure>
-      <figure class="card" data-category="nature">
-        <img src="images/nature2.svg" alt="Forest landscape" data-title="Green Forest">
-        <figcaption>Green Forest</figcaption>
-      </figure>
-      <figure class="card" data-category="city">
-        <img src="images/city1.svg" alt="City skyline" data-title="City Lights">
-        <figcaption>City Lights</figcaption>
-      </figure>
-      <figure class="card" data-category="city">
-        <img src="images/city2.svg" alt="Modern buildings" data-title="Urban View">
-        <figcaption>Urban View</figcaption>
-      </figure>
-      <figure class="card" data-category="travel">
-        <img src="images/travel1.svg" alt="Beach travel scene" data-title="Beach Trip">
-        <figcaption>Beach Trip</figcaption>
-      </figure>
-      <figure class="card" data-category="travel">
-        <img src="images/travel2.svg" alt="Road trip landscape" data-title="Road Adventure">
-        <figcaption>Road Adventure</figcaption>
-      </figure>
-    </section>
-  </main>
+    <main class="container">
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="close" id="closeBtn" aria-label="Close">&times;</button>
-    <button class="nav prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
-    <div class="lightbox-content">
-      <img id="lightboxImage" src="" alt="">
-      <h2 id="lightboxTitle"></h2>
-    </div>
-    <button class="nav next" id="nextBtn" aria-label="Next image">&#10095;</button>
-  </div>
+        <div class="controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
 
-  <footer>
-    <p>Built with HTML, CSS & JavaScript • CodeAlpha Task 1</p>
-  </footer>
+        <section class="gallery" id="gallery">
 
-  <script src="script.js"></script>
+            <!-- Nature Images -->
+            <figure class="card" data-category="nature">
+                <img src="nature1.svg" alt="Mountain landscape">
+                <figcaption>Mountain Escape</figcaption>
+            </figure>
+
+            <figure class="card" data-category="nature">
+                <img src="nature2.svg" alt="Forest landscape">
+                <figcaption>Green Forest</figcaption>
+            </figure>
+
+            <!-- City Images -->
+            <figure class="card" data-category="city">
+                <img src="city1.svg" alt="City skyline">
+                <figcaption>City Lights</figcaption>
+            </figure>
+
+            <figure class="card" data-category="city">
+                <img src="city2.svg" alt="Modern city">
+                <figcaption>Modern City</figcaption>
+            </figure>
+
+            <!-- Travel Images -->
+            <figure class="card" data-category="travel">
+                <img src="travel1.svg" alt="Travel destination">
+                <figcaption>Travel Adventure</figcaption>
+            </figure>
+
+            <figure class="card" data-category="travel">
+                <img src="travel2.svg" alt="Beautiful travel destination">
+                <figcaption>Explore The World</figcaption>
+            </figure>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
